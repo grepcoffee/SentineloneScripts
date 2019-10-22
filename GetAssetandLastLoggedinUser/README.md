@@ -1,6 +1,6 @@
 # S1 Asset and User Pull Script
 
-This script pulls all assets enrolled in S1 along with the last logged in user. 
+This script pulls all assets enrolled in S1 along with the last user who is/was logged on the asset.
 
 # Required Variables
 
