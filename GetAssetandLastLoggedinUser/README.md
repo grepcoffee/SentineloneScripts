@@ -5,7 +5,8 @@ This script pulls all assets enrolled in S1 along with the last user who is/was 
 # Required Variables
 
 * APITOKEN: S1 API Token which can be generated from the console. 
-* S1BASEURL: S1 Baseurl for your org. Typically this will be https://yourorg.sentinelone.net/
+* S1BASEURL: S1 Baseurl for your org. Typically this will be yourorg.sentinelone.net/
+* S1APIURL: S1 API url which can be found in API documentation. Typically this will be https://yourorg.sentinelone.net/web/api/v2/
 
 # Background
 

@@ -8,7 +8,7 @@ S1BASEURL = os.environ.get('S1BASETOKEN')
 S1APIURL = os.environ.get('S1APIURL')
 
 #Make API Call
-url = S1APIURL
+url = S1APIURL+"agents?query=&limit=100"
 querystring = {"apiToken":APITOKEN}
 headers = {
     'Accept': "*/*",
