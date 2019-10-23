@@ -31,8 +31,9 @@ for assetid in responsedata:
     addata = assetid['activeDirectory']
     compname = (assetid['computerName'])   
     lastuser = (assetid['lastLoggedInUserName'])
-    s1data = (compname +","+ lastuser)
-    openfile.write((s1data)+'\n')
+    sitename = (assetid['siteName'])
+    s1data = (compname +","+ lastuser+","+sitename)
+    openfile.write((s1data)+'\n'
 
 # Print additional entries and paginate
 cursor = (responsejson['pagination'])['nextCursor']
@@ -47,7 +48,8 @@ while cursor != None:
         addata = assetid['activeDirectory']
         compname = (assetid['computerName'])   
         lastuser = (assetid['lastLoggedInUserName'])
-        s1data = (compname +","+ lastuser)
+        sitename = (assetid['siteName'])
+        s1data = (compname +","+ lastuser+","+sitename)
         openfile.write((s1data)+'\n')
 
 # Close File
