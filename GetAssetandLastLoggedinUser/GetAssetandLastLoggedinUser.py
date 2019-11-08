@@ -36,7 +36,7 @@ for assetid in responsedata:
     openfile.write((s1data)+'\n'
 
 # Print additional entries and paginate
-cursor = (responsejson['pagination'])['nextCursor']
+cursor = (responsejson['pagination'])['nextCursor'] # pagination thing needed for S1 API. 
 while cursor != None:
     cururl = url + "&cursor=" + cursor
     response = requests.request("GET", cururl, headers=headers, params=querystring)
